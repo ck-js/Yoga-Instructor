@@ -55,31 +55,43 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
     /* border: 5px solid yellowgreen; */
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     
 }
 @media (max-width: 800px) {
     #description-container #text-container {
-font-size: 0.7rem;
+font-size: 1.2rem;
     }
     
 }
-
 
 #content {
 display: flex;
 flex-direction: column;
 row-gap: 100px;
 margin-bottom: 200px;
+
 }
 #baked-selection-container {
     
 }
-h1 {
+#text-container h1 {
     color: white;
     text-transform: lowercase;
 font-family: 'Courier New', Courier, monospace;
 }
+#text-container p {
+    color: white;
+    text-transform: lowercase;
+/* font-family: 'Courier New', Courier, monospace; */
+opacity: 0.6;
+}
+
+
+
+
+
+
 .title-container {
     font-size: 1.8rem;
     display: flex;

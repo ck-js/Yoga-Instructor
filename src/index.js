@@ -1,5 +1,5 @@
 // import function components from page-load.js
-import {instructorName, yogaPoseImage, restaurantDescription, pageLoadNav, flipChartTitle } from "./page-load";
+import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle,  } from "./page-load";
 // import css style file
 import './style.css'
 
@@ -20,9 +20,9 @@ body.insertBefore(pageLoadNav(), contentOutput)
 contentOutput.appendChild(yogaPoseImage());
 
  // access description container 
-const descriptionContainer = document.getElementById('description-container')
+const section1Container = document.getElementById('description-container')
 // append restaurant description to description container
-descriptionContainer.appendChild(restaurantDescription())
+section1Container.appendChild(section1Description())
 
 setInterval(flipChartTitle, 2000);
 
