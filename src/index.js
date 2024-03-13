@@ -21,11 +21,10 @@ contentOutput.appendChild(yogaPoseImage());
 
  // access description container 
 const section1Container = document.getElementById('description-container')
-// append restaurant description to description container
+// append  description to description container
 section1Container.appendChild(section1Description())
 
 setInterval(flipChartTitle, 2000);
-
 
 
 
@@ -78,5 +77,13 @@ setInterval(flipChartTitle, 2000);
 
 
 
+// window.addEventListener("scroll", function() {
+//     const slideHeading = document.getElementById("slide-heading");
+//     const slidePosition = slideHeading.getBoundingClientRect().top;
 
-
+//     if (slidePosition <= window.innerHeight) { /* Check if heading is visible */
+//       slideHeading.style.left = "0"; /* Slide to the right */
+//     } else {
+//       slideHeading.style.left = "-100px"; /* Hide outside the viewport */
+//     }
+//   });
