@@ -1,5 +1,5 @@
 // import function components from page-load.js
-import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle,  } from "./page-load";
+import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle, section2Component,  } from "./page-load";
 // import css style file
 import './style.css'
 
@@ -14,8 +14,6 @@ body.insertBefore(instructorName(), contentOutput)
 
 // append nav to content output
 body.insertBefore(pageLoadNav(), contentOutput)
-
-
  // append yoga pose image to content output
 contentOutput.appendChild(yogaPoseImage());
 
@@ -26,64 +24,5 @@ section1Container.appendChild(section1Description())
 
 setInterval(flipChartTitle, 2000);
 
+contentOutput.appendChild(section2Component())
 
-
-
-// // get nav ul element
-// const ulElement = document.getElementById('nav-ul')
-// // get li elements of nav bar
-// const liElements = ulElement.getElementsByTagName('li');
-// for (let i = 0; i < liElements.length; i++) {
-//     const element = liElements[i];
-//     element.addEventListener('click', (event) => {
-//  // clear the elements in content container
-        
-// // determine which li item was clicked
-// if (event.target.id === 'Lunch') {
-//     ClearContentDom(contentOutput);
-//     contentOutput.appendChild(lunchHeading())
-//     contentOutput.appendChild(smallBitesSelection())
-//     contentOutput.appendChild(houseBurgersSelection())
-//     contentOutput.appendChild(mainPlatesSelection())
-//     // contentOutput.appendChild(optionalOmeletteSelection())
-
-
-// }
-
-// if (event.target.id === 'Breakfast') {
-//     ClearContentDom(contentOutput);
-//     contentOutput.appendChild(breakfastHeading())
-//     contentOutput.appendChild(bakedSelection())
-//     contentOutput.appendChild(breakfastSelection())
-//     contentOutput.appendChild(optionalOmeletteSelection())
-// }
-//     })
-
-// }
-// function ClearContentDom(parentElement) {
-    
-//     // loop through all child elements of content container
-// // for (let i = 0; i < contentOutput.children.length; i++) {
-// //     const childElements = contentOutput.children[i];
-// //     contentOutput.removeChild(childElements)
-    
-
-// while (parentElement.firstChild) {
-//     parentElement.removeChild(parentElement.firstChild)
-// }
-
-
-// }
-
-
-
-// window.addEventListener("scroll", function() {
-//     const slideHeading = document.getElementById("slide-heading");
-//     const slidePosition = slideHeading.getBoundingClientRect().top;
-
-//     if (slidePosition <= window.innerHeight) { /* Check if heading is visible */
-//       slideHeading.style.left = "0"; /* Slide to the right */
-//     } else {
-//       slideHeading.style.left = "-100px"; /* Hide outside the viewport */
-//     }
-//   });
