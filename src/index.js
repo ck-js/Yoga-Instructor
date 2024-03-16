@@ -1,5 +1,5 @@
 // import function components from page-load.js
-import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle, section2Component,  } from "./page-load";
+import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle, section2Component, section3Component, section4Component, section5Component, section6Component, section7Component } from "./page-load";
 // import css style file
 import './style.css'
 
@@ -25,4 +25,16 @@ section1Container.appendChild(section1Description())
 setInterval(flipChartTitle, 2000);
 
 contentOutput.appendChild(section2Component())
+
+contentOutput.appendChild(section3Component())
+
+contentOutput.appendChild(section4Component())
+
+contentOutput.appendChild(section5Component())
+
+contentOutput.appendChild(section6Component())
+
+contentOutput.appendChild(section7Component())
+
+
 

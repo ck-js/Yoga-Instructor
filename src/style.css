@@ -91,9 +91,7 @@ margin-bottom: 20%;
     height: 600px;
     background-color: white;    
     margin-left: auto;
-    margin-right: auto;
-    opacity: 0.8;
- 
+    margin-right: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +105,8 @@ margin-bottom: 20%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
+opacity: 0.8;
+    
 }
 
 #section-2-title {
@@ -115,6 +115,181 @@ font-size: 2.2rem;
     
 }
 #section-2-paragraph {
+    color: black;
+font-size: 1.2rem;
+    
+}
+
+#section-3-parent-container {
+    width: 80vw;
+    height: 600px;
+    background-color: white;    
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    margin-top: -100px;
+
+}
+#section-3-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+opacity: 0.8;
+    
+}
+
+#section-3-title {
+    color: black;
+font-size: 2.2rem;
+    
+}
+#section-3-paragraph {
+    color: black;
+font-size: 1.2rem;
+    
+}
+
+#section-4-parent-container {
+    width: 80vw;
+    height: 600px;
+    background-color: white;    
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    margin-top: -100px;
+
+}
+#section-4-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+opacity: 0.8;
+    
+}
+
+#section-4-title {
+    color: black;
+font-size: 2.2rem;
+    
+}
+#section-4-paragraph {
+    color: black;
+font-size: 1.2rem;
+    
+}
+
+#section-5-parent-container {
+    width: 80vw;
+    height: 600px;
+    background-color: white;    
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    margin-top: -100px;
+
+}
+#section-5-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+opacity: 0.8;
+    
+}
+
+#section-5-title {
+    color: black;
+font-size: 2.2rem;
+    
+}
+#section-5-paragraph {
+    color: black;
+font-size: 1.2rem;
+    
+}
+
+#section-6-parent-container {
+    width: 80vw;
+    height: 600px;
+    background-color: white;    
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    margin-top: -100px;
+
+}
+#section-6-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+opacity: 0.8;
+    
+}
+
+#section-6-title {
+    color: black;
+font-size: 2.2rem;
+    
+}
+#section-6-paragraph {
+    color: black;
+font-size: 1.2rem;
+    
+}
+
+#section-7-parent-container {
+    width: 80vw;
+    height: 600px;
+    background-color: white;    
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    margin-top: -100px;
+
+}
+#section-7-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+opacity: 0.8;
+    
+}
+
+#section-7-title {
+    color: black;
+font-size: 2.2rem;
+    
+}
+#section-7-paragraph {
     color: black;
 font-size: 1.2rem;
     
