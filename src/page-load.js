@@ -1,4 +1,6 @@
 import yogaPoseImg from './yoga-pose.png'
+import eyeIconSvg from './eye-arrow-left.svg';
+
 
 function instructorName() {
     const div = document.createElement('div');
@@ -107,6 +109,7 @@ function flipChartTitle() {
 // section 2 components 
 function section2Component() {
 const parentContainer = document.createElement('div')
+parentContainer.classList.add('bio')
 parentContainer.id = 'section-2-parent-container';
 
 const textsContainer = document.createElement('div');
@@ -132,6 +135,7 @@ return parentContainer
 // section 3 components 
 function section3Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('bio')
     parentContainer.id = 'section-3-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -156,6 +160,7 @@ function section3Component() {
 // section 4 components 
 function section4Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('bio')
     parentContainer.id = 'section-4-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -180,6 +185,7 @@ function section4Component() {
 // section 5 components 
 function section5Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('bio')
     parentContainer.id = 'section-5-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -203,6 +209,7 @@ function section5Component() {
 // section 6 components 
 function section6Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('bio')
     parentContainer.id = 'section-6-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -227,6 +234,7 @@ function section6Component() {
 // section 7 components 
 function section7Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('bio')
     parentContainer.id = 'section-7-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -248,7 +256,118 @@ function section7Component() {
     return parentContainer
     }
 
+// section 8 components 
+function section8Component() {
+    const parentContainer = document.createElement('div')
+    parentContainer.id = 'section-8-parent-container';
+    
+    const cardsContainer = document.createElement('div');
+    cardsContainer.id = 'section-8-cards-container';
+    
+const cardItem1 = document.createElement('div')
+cardItem1.classList.add('card-item')
+const cardItem2 = document.createElement('div')
+cardItem2.classList.add('card-item')
+const cardItem3 = document.createElement('div')
+cardItem3.classList.add('card-item')
+const cardItem4 = document.createElement('div')
+cardItem4.classList.add('card-item')
 
+let eyeIcon = new Image();
+eyeIcon.src = eyeIconSvg; 
+eyeIcon.alt = 'hello there'
+eyeIcon.id = 'eye-icon'
+cardItem1.style.backgroundImage = 'url(eyeIcon)'
+
+const cardTitle = document.createElement('h5')
+cardTitle.textContent = 'yoga teacher';
+
+const cardDescription = document.createElement('p');
+cardDescription.textContent = 'Teaching yoga to all levels in workshops and in private sessions'
+
+cardItem1.appendChild(eyeIcon)
+cardItem1.appendChild(cardTitle)
+cardItem1.appendChild(cardDescription)
+
+
+const eyeIcon2 = new Image();
+eyeIcon2.src = eyeIconSvg; 
+eyeIcon2.alt = 'hello there'
+eyeIcon2.id = 'eye-icon'
+cardItem2.style.backgroundImage = 'url(eyeIcon2)'
+
+const cardTitle2 = document.createElement('h5')
+cardTitle2.textContent = 'yoga teacher';
+
+const cardDescription2 = document.createElement('p');
+cardDescription2.textContent = 'Teaching yoga to all levels in workshops and in private sessions'
+
+cardItem2.appendChild(eyeIcon2)
+cardItem2.appendChild(cardTitle2)
+cardItem2.appendChild(cardDescription2)
+
+
+
+const eyeIcon3 = new Image();
+eyeIcon3.src = eyeIconSvg; 
+eyeIcon3.alt = 'hello there'
+eyeIcon3.id = 'eye-icon'
+cardItem3.style.backgroundImage = 'url(eyeIcon3)'
+
+const cardTitle3 = document.createElement('h5')
+cardTitle3.textContent = 'yoga teacher';
+
+const cardDescription3 = document.createElement('p');
+cardDescription3.textContent = 'Teaching yoga to all levels in workshops and in private sessions'
+
+cardItem3.appendChild(eyeIcon3)
+cardItem3.appendChild(cardTitle3)
+cardItem3.appendChild(cardDescription3)
+
+
+
+
+
+    parentContainer.appendChild(cardsContainer)
+    cardsContainer.appendChild(cardItem1)
+    cardsContainer.appendChild(cardItem2)
+    cardsContainer.appendChild(cardItem3)
+    cardsContainer.appendChild(cardItem4)
+
+    return parentContainer
+    }
+
+// section 9 components 
+function section9Component() {
+    const parentContainer = document.createElement('div')
+    parentContainer.id = 'section-9-parent-container';
+    
+    const textsContainer = document.createElement('div');
+    textsContainer.id = 'section-9-text-container';
+    
+    const h1 = document.createElement('h1');
+    h1.id = 'section-7-title';
+    h1.textContent = "Contact Paula";
+    
+const hr = document.createElement('hr')
+
+    const p = document.createElement('h6')
+    p.id = 'section-7-paragraph';
+    p.textContent = "+66 123456789";
+    
+    const p2 = document.createElement('h6')
+    p2.id = 'section-7-paragraph-2';
+    p2.textContent = "paulasmoonbythesea@gmail.com";
+    
+    textsContainer.appendChild(h1)
+    textsContainer.appendChild(hr)
+     textsContainer.appendChild(p)
+     textsContainer.appendChild(p2)
+    
+    parentContainer.appendChild(textsContainer)
+    
+    return parentContainer
+    }
 
 
 
@@ -264,5 +383,7 @@ export {
        section5Component,
        section6Component,
        section7Component,
+       section8Component,
+       section9Component,
 
      }; 
